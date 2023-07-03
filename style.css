@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --main: #16db65;
+    --hover: #50e08c;
+    --bg: #f1f8fc;
+    --darktxt: #312f3a;
+    --lighttxt:#aaa;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+img{
+    width: 100%;
+}
+.section{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.logo img{
+    width: 50px;
+    margin-top: 0rem;
+    margin-right: .5rem;
+}
+.content{
+    position: relative;
+    padding: 0 3rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .content{
+    padding-top: 2.7rem;
+}
+a{
+    text-decoration: none;
+    transition: .3s ease;
+    outline: none;
+}
+.active{
+    color: var(--main);
+    transform: scale(1.05)
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    display: inline-block;
+    margin-left: 4rem;
+    color: var(--bg);
+    font-weight: 200;
+    
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid var(--main);
+    padding: .9rem 1.2rem;
+    color: #fff;
+    font-weight: 200;
+}
+.contact{
+    color: #fff;
+    background-color: var(--main);
+    border: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    color: var(--bg);
+    font-size: 2.2rem;
+}
+a:hover{
+    color: var(--main);
+    transform: scale(1.05);
+}
+.btn:hover{
+    color: #fff;
+    transform: scale(1);
+    background-color: var(--hover);
+}
+.logo{
+    cursor: pointer;
+}
+/* end-of-header */
+
+/* Middle */
+
+.overlay{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image:linear-gradient(to top right,#000,transparent);
+}
+#home{
+    background-image:url(images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 40s linear infinite;
+    
+    
+}
+@keyframes slider{
+    35%{
+        background-image:url(images/bg2.jpg);
+        
+    }
+    50%{
+        background-image:url(images/bg3.jpg);
+        
+    }
+    60%{
+        background-image:url(images/bg4.jpg);
+        
+    }
+    70%{
+        background-image:url(images/bg5.jpg);
+        
+    }
+    80%{
+        background-image:url(images/bg6.jpg);
+        
+    } 
+    90%{
+        background-image:url(images/bg7.jpg);
+        
+    }
+    95%{
+        background-image:url(images/bg8.jpg);
+        
+    }
+    
+}
+.middle .content{
+    min-height:80vh;
+    
+      
+}
+.left{
+    padding-top: 1.4rem;
+}
+
+.left .title h1{
+    color: var(--main);
+    font-size: 9rem;
+    text-shadow: 5px 5px 50px #525154;
+    
+    line-height: 7rem;
+}
+span{
+    color: var(--main);
+}
+.comma{
+    color: var(--bg);
+    font-size: 6rem;
+}
+.left .sub-title h2{
+    font-size: 2.5rem;
+    color: var(--bg);
+    padding-left: .6rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+   
+
+}
+.left p{
+    margin: 1rem 0 2.5rem;
+    color: rgb(221, 220, 220);
+    line-height: 2.5rem;
+    font-weight: 200;
+    padding-left: .6rem;
+    max-width: 50rem;
+    
+
+}
+.left .btn-box{
+    padding-left: .6rem;
+}
+.main-img{
+    width: 100%;
+    margin-left: -3rem;
+    margin-bottom: 6.5rem;
+
+}
+.footer{
+    color:#aaa;
+    display: flex;
+    justify-content: center;
+
+}
+@media screen and (max-width: 768px) 
+{
+    .content {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .middle {
+        padding: 50px 50px 0 50px;
+    }
+}
+@media screen and (max-width: 990px){
+    .content {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .middle {
+        padding: 50px 50px 0 50px;
+    }
+    .footer{
+        padding-bottom: 5rem;
+    }
+}
